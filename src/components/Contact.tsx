@@ -11,7 +11,7 @@ const Contact = () => {
             <h4>Email</h4>
             <p>
               <a href="mailto:rajeshpattanaik.apiman@gmail.com" data-cursor="disable">
-              rajeshpattanaik.apiman@gmail.com
+                rajeshpattanaik.apiman@gmail.com
               </a>
             </p>
             <h4>Phone</h4>
