@@ -7,6 +7,33 @@ import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
 
 const Work = () => {
+  const projects = [
+    {
+      title: "Uptula Job Portal",
+      type: "Mobile Application",
+      tools: "React Native, Redux, Firebase, JavaScript",
+      image: "/images/Uptula.png",
+    },
+    {
+      title: "NewzTok",
+      type: "Mobile Application & Web Application",
+      tools: "React Native, Firebase, Redux, JavaScript, React JS, Matterial UI",
+      image: "/images/Newztok.png",
+    },
+    {
+      title: "CoHopers",
+      type: "Mobile Application & Web Application",
+      tools: "React Native, Firebase, Redux, JavaScript, React JS, Matterial UI",
+      image: "/images/Cohopers.png",
+    },
+    // {
+    //   title: "ADC Clube",
+    //   type: "Mobile Application",
+    //   tools: "React Native, Firebase, Redux, JavaScript",
+    //   image: "/images/Uptula.png",
+    // },
+  ];
+
   useGSAP(() => {
   let translateX: number = 0;
 
@@ -53,21 +80,21 @@ const Work = () => {
           My <span>Work</span>
         </h2>
         <div className="work-flex">
-          {[...Array(6)].map((_value, index) => (
+          {projects.map((project, index) => (
             <div className="work-box" key={index}>
               <div className="work-info">
                 <div className="work-title">
                   <h3>0{index + 1}</h3>
 
                   <div>
-                    <h4>Project Name</h4>
-                    <p>Category</p>
+                    <h4>{project.title}</h4>
+                    <p>{project.type}</p>
                   </div>
                 </div>
                 <h4>Tools and features</h4>
-                <p>Javascript, TypeScript, React, Threejs</p>
+                <p>{project.tools}</p>
               </div>
-              <WorkImage image="/images/placeholder.webp" alt="" />
+              <WorkImage image={project.image} alt={project.title} />
             </div>
           ))}
         </div>

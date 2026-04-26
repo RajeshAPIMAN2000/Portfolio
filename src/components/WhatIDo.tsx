@@ -87,24 +87,23 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>DEVELOP</h3>
+              <h3>WEB APPLICATION DEVELOPER</h3>
               <h4>Description</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quia aliquid laboriosam ducimus sit molestiae.
+                A scalable web platform designed with React.js, featuring secure role-based systems, efficient state management, and smooth API-driven user experiences.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
                 <div className="what-tags">JavaScript</div>
                 <div className="what-tags">TypeScript</div>
-                <div className="what-tags">Three.js</div>
+                {/* <div className="what-tags">Three.js</div> */}
                 <div className="what-tags">React</div>
-                <div className="what-tags">Css</div>
+                {/* <div className="what-tags">Css</div> */}
                 <div className="what-tags">Node.js</div>
-                <div className="what-tags">Next.js</div>
+                {/* <div className="what-tags">Next.js</div> */}
                 <div className="what-tags">Express.js</div>
-                <div className="what-tags">PHP</div>
-                <div className="what-tags">MySql</div>
+                {/* <div className="what-tags">PHP</div> */}
+                <div className="what-tags">MySQL</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -128,22 +127,24 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>DESIGN</h3>
+              <h3>MOBILE APPLICATION DEVELOPER</h3>
               <h4>Description</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quia aliquid laboriosam ducimus sit molestiae
+                A modern mobile application designed for speed and usability, with smart notifications, location-based features, and optimized performance for real-world usage.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Blender</div>
-                <div className="what-tags">Zbrush</div>
+                <div className="what-tags">React-Native</div>
+                <div className="what-tags">Firebase-Notification & Auth</div>
+                <div className="what-tags">Android Studio</div>
+                <div className="what-tags">Xcode</div>
+                {/* <div className="what-tags">Zbrush</div>
                 <div className="what-tags">UI Design</div>
                 <div className="what-tags">Motion</div>
                 <div className="what-tags">Rigging</div>
                 <div className="what-tags">3D Animation</div>
                 <div className="what-tags">Character Design</div>
-                <div className="what-tags">Modelling</div>
+                <div className="what-tags">Modelling</div> */}
               </div>
               <div className="what-arrow"></div>
             </div>

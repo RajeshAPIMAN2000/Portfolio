@@ -194,9 +194,16 @@
   color: var(--backgroundColor);
 }
 .loader-title {
+  display: inline-flex;
+  align-items: center;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.2px;
+}
+.loader-logo {
+  display: block;
+  width: 140px;
+  height: auto;
 }
 @keyframes blink {
   0% {
@@ -352,6 +359,9 @@
   .loader-title {
     font-size: 16px;
   }
+  .loader-logo {
+    width: 160px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .loading-header {
@@ -359,5 +369,8 @@
   }
   .loader-title {
     font-size: 18px;
+  }
+  .loader-logo {
+    width: 180px;
   }
 }

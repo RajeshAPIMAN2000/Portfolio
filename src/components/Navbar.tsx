@@ -3,6 +3,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HoverLinks from "./HoverLinks";
 import { gsap } from "gsap";
 import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
+import rajeshLogo from "../assets/rajesh.svg";
+import rajeshLogoFallback from "../assets/rajesh logo.png";
 import "./styles/Navbar.css";
 
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
@@ -43,14 +45,21 @@ const Navbar = () => {
     <>
       <div className="header">
         <a href="/#" className="navbar-title" data-cursor="disable">
-          Logo
+          <img
+            src={rajeshLogo}
+            alt="Rajesh logo"
+            className="navbar-logo"
+            onError={(e) => {
+              e.currentTarget.src = rajeshLogoFallback;
+            }}
+          />
         </a>
         <a
           href="mailto:example@mail.com"
           className="navbar-connect"
           data-cursor="disable"
         >
-          example@mail.com
+          info@devrajesh.in
         </a>
         <ul>
           <li>

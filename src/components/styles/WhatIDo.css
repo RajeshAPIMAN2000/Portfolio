@@ -208,6 +208,17 @@
   height: 100%;
   overflow: hidden;
 }
+.what-noTouch:hover .what-content-in,
+.what-content-active .what-content-in {
+  overflow-y: auto;
+  padding-right: 6px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.what-noTouch:hover .what-content-in::-webkit-scrollbar,
+.what-content-active .what-content-in::-webkit-scrollbar {
+  display: none;
+}
 .what-content-in h5 {
   font-weight: 300;
   opacity: 0.5;
@@ -342,13 +353,6 @@
   }
   .what-content h5,
   .what-content-flex {
-    opacity: 0;
-    transition: 0.3s;
-  }
-  .what-noTouch:hover h5,
-  .what-content-active h5,
-  .what-noTouch:hover .what-content-flex,
-  .what-content-active .what-content-flex {
     opacity: 1;
   }
   .what-content {
@@ -359,6 +363,7 @@
   }
   .what-noTouch:hover,
   .what-content-active {
+    min-height: 67%;
     padding: 10px 30px;
   }
   .what-tags {
@@ -368,6 +373,7 @@
   .what-noTouch:hover ~ .what-content,
   .what-box-in:hover .what-noTouch:not(:hover),
   .what-content.what-sibling {
+    min-height: 33%;
     padding: 5px 30px;
   }
   .what-content h3 {
