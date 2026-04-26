@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
 import HoverLinks from "./HoverLinks";
 import { gsap } from "gsap";
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
 import rajeshLogo from "../assets/rajesh.svg";
 import rajeshLogoFallback from "../assets/rajesh logo.png";
 import "./styles/Navbar.css";
